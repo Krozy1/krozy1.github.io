@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пересылка на Email</title>
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+  
+  <section class="contact">
+    <h1>𝖌𝖍𝖑</h1>
+    <h2>Анкета в 𝖌𝖍𝖑!</h2>
+
+    <form action="#">
+      <div class="input-box">
+        <div class="input-field field">
+          <input type="text" placeholder="Полное Имя" id="name" class="item" autocomplete="off">
+          <div class="error-txt">Это поле не может быть пустым!</div>
+        </div>
+        <div class="input-field field">
+          <input type="text" placeholder="Почта" id="email" class="item" autocomplete="off">
+          <div class="error-txt email">Email не может быть пустым!</div>
+        </div>
+      </div>
+
+        <div class="input-box">
+          <div class="input-field field">
+            <input type="text" placeholder="Discord ID" id="discord" class="item" autocomplete="off">
+            <div class="error-txt">Discord ID не может быть пустым!</div>
+          </div>
+          <div class="input-field field">
+            <input type="text" placeholder="Сколько лет" id="years" class="item" autocomplete="off">
+            <div class="error-txt">Это поле не может быть пустым!</div>
+          </div>
+      </div>
+
+      <div class="textarea-field field">
+        <textarea name="" id="message" cols="30" rows="10" placeholder="Доп. Комментарий" class="item" autocomplete="off"></textarea>
+        <div class="error-txt">Это поле не может быть пустым!</div>
+      </div>
+
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/script2.js"></script>
+</body>
+
+</html>
